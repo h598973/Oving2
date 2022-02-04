@@ -1,16 +1,44 @@
 package no.hvl.data102.klient;
 
+
+import java.util.Scanner;
+
 import no.hvl.*;
+import no.hvl.data102.Film;
 
 public class Tekstgrensesnitt {
 	// Lese opplysningene om en FILM fra tastatur.
 	public static void main(String[] args) {
 
 	}
-
+	
+	//Error
 	public Film lesFilm() {
-		// TODO
-		return null;
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Filmnr?");
+		int filmnr = Integer.valueOf(scanner.nextLine());
+		
+		System.out.println("Produsent");
+		String produsent = scanner.nextLine();
+		
+		System.out.println("Tittel?");
+		String tittel = scanner.nextLine();
+		
+		System.out.println("Releaseyear?");
+		int releaseYear = Integer.valueOf(scanner.nextLine());
+		
+		System.out.println("Sjanger");
+		String sjanger = scanner.nextLine();
+		
+		System.out.println("Utgiver?");
+		String utgiver = scanner.nextLine();
+		
+		scanner.close();
+		
+		return film(filmnr,produsent,tittel,releaseYear,sjanger,utgiver);
+		
+		
 	}//End lesFilm
 
 	// Vise en film med alle opplysningene på skjerm (husk tekst for sjanger)

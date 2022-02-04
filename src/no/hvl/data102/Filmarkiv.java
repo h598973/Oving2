@@ -17,6 +17,7 @@ public class Filmarkiv implements FilmarkivADT {
 
 	public void leggTilFilm(Film nyfilm) {
 		filma.add(nyfilm);
+		
 	}
 
 	public boolean slettFilm(int filmnr) {

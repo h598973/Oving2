@@ -71,6 +71,7 @@ public class Film {
 		this.utgiver = utgiver;
 	}
 
+	//Not complete
 	@Override
 	public boolean equals(Object film) {
 		if (this.filmnr == this.getFilmnr(filmnr))
@@ -79,6 +80,7 @@ public class Film {
 			return false;
 	}
 
+	//Not Complete
 	@Override
 	public int hashCode() {
 		Integer temp = filmnr;
