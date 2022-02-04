@@ -19,7 +19,9 @@ public class Meny {
 
 	public void Start() {
 		// legg inn en den forhåndsdefinerte filmer
+		
 		// TODO
+		getFilmarkiv();
 	}
 
 	public FilmarkivADT getFilmarkiv() {

@@ -2,11 +2,13 @@ package no.hvl.data102;
 
 import no.hvl.data102.adt.FilmarkivADT;
 import no.hvl.data102.klient.*;
+import java.util.ArrayList;
 
 public class Filmarkiv implements FilmarkivADT {
 
 	private int antall = 0;
-	Film filma = new Film();
+	
+	ArrayList <Filmarkiv> filma = new ArrayList<Filmarkiv>(antall);
 	
 	public Filmarkiv(Film[] filma) {
 		
@@ -16,7 +18,6 @@ public class Filmarkiv implements FilmarkivADT {
 	}
 
 	public void leggTilFilm(Film nyfilm) {
-		filma.add(nyfilm);
 		
 	}
 
@@ -33,7 +34,7 @@ public class Filmarkiv implements FilmarkivADT {
 	}
 
 	public int antall() {
-		return filma.length;
+		return filma.size();
 	}
 
 }

@@ -23,7 +23,7 @@ public class Film {
 		this.utgiver = utgiver;
 	}
 
-	public int getFilmnr(int filmnr) {
+	public int getFilmnr() {
 		return this.filmnr;
 	}
 
@@ -31,7 +31,7 @@ public class Film {
 		this.filmnr = filmnr;
 	}
 
-	public String getProdusent(String produsent) {
+	public String getProdusent() {
 		return this.produsent;
 	}
 
@@ -39,7 +39,7 @@ public class Film {
 		this.produsent = produsent;
 	}
 
-	public String getTittel(String tittel) {
+	public String getTittel() {
 		return this.tittel;
 	}
 
@@ -47,7 +47,7 @@ public class Film {
 		this.tittel = tittel;
 	}
 
-	public int getReleaseYear(int releaseYear) {
+	public int getReleaseYear() {
 		return this.releaseYear;
 	}
 
@@ -55,7 +55,7 @@ public class Film {
 		this.releaseYear = releaseYear;
 	}
 
-	public Sjanger getSjanger(Sjanger sjanger) {
+	public Sjanger getSjanger() {
 		return this.sjanger;
 	}
 
@@ -63,7 +63,7 @@ public class Film {
 		this.sjanger = sjanger;
 	}
 
-	public String getUtgiver(String utgiver) {
+	public String getUtgiver() {
 		return this.utgiver;
 	}
 
